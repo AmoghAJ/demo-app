@@ -1,5 +1,5 @@
 pipeline {
-    agent label: "master"
+    agent any
     parameters {
         string(name: 'VERSION', defaultValue: 'v1', description: 'Application version')
     }
