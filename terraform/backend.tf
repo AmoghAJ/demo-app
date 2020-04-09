@@ -1,7 +1,7 @@
 terraform {
   backend "gcs" {
     credentials = "/demo-app/secrets/account.json"
-    bucket      = "terraform-state-my-demo-app"
+    bucket      = "terraform-state-demo-app"
     prefix      = "terraform/state"
   }
 }
