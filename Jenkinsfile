@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Generate dockerfile') { 
             steps {
-                sed '"s/#{VERSION}/${params.VERSION}/g" Dockerfile-template > Dockerfile'
+                sh "sed 's/#{VERSION}/${params.VERSION}/g' Dockerfile-template > Dockerfile"
             }
         }
         stage('Build image') {
