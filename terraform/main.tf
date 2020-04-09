@@ -27,9 +27,7 @@ resource "google_container_cluster" "demo-app-cluster" {
     tags = [var.app_name]
   }
 
-  node_locations {
-    var.node_locations
-  }
+  node_locations = var.node_locations
 
   timeouts {
     create = var.cluster_create_timeout

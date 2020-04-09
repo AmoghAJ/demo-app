@@ -2,25 +2,25 @@
 apiVersion: "apps/v1"
 kind: "Deployment"
 metadata:
-  name: "demo-app-v1"
+  name: "demo-app-v2"
   namespace: "default"
   labels:
     app: "demo-app"
 spec:
-  replicas: 4
+  replicas: 1
   selector:
     matchLabels:
       app: "demo-app"
-      version: "v1"
+      version: "v2"
   template:
     metadata:
       labels:
         app: "demo-app"
-        version: "v1"
+        version: "v2"
     spec:
       containers:
-      - name: "demo-app-v1"
-        image: "amoghaj/demo-app:v1"
+      - name: "demo-app-v2"
+        image: "amoghaj/demo-app:v2"
         ports:
         - name: http
           containerPort: 8080
