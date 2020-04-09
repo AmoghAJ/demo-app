@@ -1,0 +1,6 @@
+FROM openjdk:11-jre-slim
+LABEL maintainer="j.amogh06@gmail.com"
+WORKDIR /app
+COPY demo-app-#{VERSION}.jar /app/demo-app.jar
+EXPOSE 8080
+CMD ["java", "-jar", "demo-app.jar"]
