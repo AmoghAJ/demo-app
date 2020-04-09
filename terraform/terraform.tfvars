@@ -1,0 +1,11 @@
+credentials_file = "/demo-app/account.json"
+project = "bionic-bond-273711"
+app_name = "demo-app-test"
+region = "europe-west3"
+initial_node_count = "1"
+node_disk = "50"
+node_machine_type = "n1-g1-small"
+node_image_type = "COS"
+node_locations = ["europe-west3-a", "europe-west3-b"]
+cluster_create_timeout = "30m"
+cluster_update_timeout = "40m"
