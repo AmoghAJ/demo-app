@@ -1,6 +1,6 @@
 credentials_file = "/demo-app/account.json"
-project = "bionic-bond-273711"
-app_name = "demo-app-test"
+project = "acoustic-rider-273823"
+app_name = "demo-app"
 region = "europe-west3"
 initial_node_count = "1"
 node_disk = "50"

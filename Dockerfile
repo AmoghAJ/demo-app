@@ -7,3 +7,4 @@ RUN ln -s /opt/terraform /usr/local/bin/terraform
 RUN rm /tmp/terraform.zip
 WORKDIR /demo-app
 RUN git clone https://github.com/AmoghAJ/demo-app.git /demo-app
+CMD ["git", "pull"]
